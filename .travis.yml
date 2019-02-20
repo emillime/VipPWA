@@ -8,6 +8,10 @@ branches:
   only:
   - master
 
+cache:
+  directories:
+    - node_modules
+
 before_script:
   - npm install
 
@@ -20,6 +24,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
+  fqdn: emil.vip
   github_token: $GITHUB_TOKEN
   local_dir: dist/VipPWA
   on:
