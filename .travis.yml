@@ -27,5 +27,6 @@ deploy:
   fqdn: emil.vip
   github_token: $GITHUB_TOKEN
   local_dir: dist/VipPWA
+  keep-history: true
   on:
     branch: master
